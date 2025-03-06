@@ -9,17 +9,17 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v4.2.2
+      - uses: actions-rs/toolchain@v1.0.7
         with:
           toolchain: stable
           override: true
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.2.2
         with:
           repository: gtk-rs/gir
           ref: master
           path: gir
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.2.2
         with:
           repository: gtk-rs/sys
           ref: master
